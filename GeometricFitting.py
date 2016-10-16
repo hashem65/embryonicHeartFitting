@@ -103,7 +103,7 @@ print "mesh resolution and parameters fixed"
 # The number of data points which are digitised from the heart segments 
 # fix interior nodes so that fitting only applies to surface
 # If start iteration > 1, read in geometry from a previous fit iteration
-numberOfDataPoints = 1497
+numberOfDataPoints = 1024
 numberOfIterations = 10
 fixInterior = True
 zeroTolerance = 0.00001
@@ -658,7 +658,7 @@ if (fixInterior):
                                                version,globalDeriv,nodeId,component,
                                                iron.BoundaryConditionsTypes.FIXED,value)
 
-
+'''
 for i in range (1,4): 
 	for component in range(1,numberOfDimensions+1):
 		value = geometricField.ParameterSetGetNodeDP(iron.FieldVariableTypes.U,
@@ -681,7 +681,7 @@ for i in range (25,49):
 			                   1,iron.GlobalDerivativeConstants.NO_GLOBAL_DERIV,
 					   i,component,
 			                   iron.BoundaryConditionsTypes.FIXED,value)
-
+'''
 
 
 
